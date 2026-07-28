@@ -2,10 +2,7 @@
   --accent-color: #007bc7;
 }
 
-html {
-  box-sizing: border-box;
-}
-
+html,
 body,
 header,
 nav,
@@ -13,7 +10,7 @@ ul,
 li,
 a,
 img {
-  box-sizing: inherit;
+  box-sizing: border-box;
 }
 
 body {
