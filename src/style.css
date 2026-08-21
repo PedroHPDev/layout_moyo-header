@@ -1,9 +1,10 @@
-html {
-  font-family: Roboto, Arial, sans-serif;
+:root {
+  --blue-color: #00acdc;
 }
 
-* {
+html {
   box-sizing: border-box;
+  font-family: Roboto, Arial, sans-serif;
 }
 
 body {
@@ -11,10 +12,12 @@ body {
 }
 
 .header {
+  box-sizing: border-box;
+
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 60px;
+
   padding: 0 50px;
 
   background-color: #fff;
@@ -49,22 +52,25 @@ body {
 
   display: flex;
   align-items: center;
+
   height: 60px;
 
   color: #000;
+
   font-size: 12px;
   font-weight: 500;
   line-height: 14px;
+
   text-decoration: none;
   text-transform: uppercase;
 }
 
 .nav__link:hover {
-  color: #00acdc;
+  color: var(--blue-color);
 }
 
 .nav__link.is-active {
-  color: #00acdc;
+  color: var(--blue-color);
 }
 
 .nav__link.is-active::after {
@@ -78,5 +84,5 @@ body {
   height: 4px;
 
   border-radius: 8px;
-  background-color: #00acdc;
+  background-color: var(--blue-color);
 }
